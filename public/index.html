@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Camel Race</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Camel Race</h1>
+  <div class="board" id="board"></div>
+  <button id="rollDice">Roll Dice</button>
+  <div>
+    <h3>Drawn Dice:</h3>
+    <div class="dice-container" id="drawnDice"></div>
+  </div>
+  <div class="chat-window" id="chatWindow"></div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
