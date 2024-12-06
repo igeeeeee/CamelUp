@@ -1,7 +1,7 @@
-# camel_up_1st_sample
+# camel_up_sample
 
 ```
-cd camel-up_1st_sample
+cd camelup
 npm init -y 
 npm install express socket.io
 ```
