@@ -62,6 +62,11 @@ io.on("connection", (socket) => {
     const result = moveCamel();
     io.emit("camelMoved", { camels, result });
   });
+
+  socket.on("serverHello", () => {
+
+    io.emit("saidHello");
+  });
 });
 
 server.listen(PORT, () => {

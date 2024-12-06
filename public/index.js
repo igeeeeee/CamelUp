@@ -69,3 +69,17 @@ socket.on("camelMoved", (data) => {
 document.getElementById("rollDice").onclick = () => {
   socket.emit("rollDice");
 };
+
+//テストHelloとログを流す
+document.getElementById("sayHello").onclick = () => {
+  socket.emit("serverHello");
+};
+
+socket.on("saidHello", () => {
+
+  addChatMessage(
+    `Hello!`
+  );
+});
+
+
